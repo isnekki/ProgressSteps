@@ -62,4 +62,38 @@ h1 {
     margin: 0;
     font-size: 20px;
     color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 350px;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+button:active {
+    scale: 1.05;
+}
+
+button:disabled {
+    background-color: lightgray;
+    transition: background-color 0.5s;
+    scale: 1;
+    cursor: not-allowed;
 }
